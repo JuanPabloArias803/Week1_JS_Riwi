@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El viaje de Julian</title>
+  </head>
+
+  <body>
+    <h1 id="h1">Bienvenido</h1>
+
+    <section class="budget">
+      <h2 id="h2_total_budget">Presupuesto disponble:</h2>
+      <form>
+        <input
+          id="budget_quantity"
+          type="number"
+          min="1000000"
+          max="30000000"
+          required
+          value="0"
+        />
+        <button id="submit_budget_btn" type="button">Definir</button>
+      </form>
+    </section>
+
+    <section class="days">
+      <h2 id="h2_total_days">Duración en días:</h2>
+      <form>
+        <input
+          id="days_count"
+          type="number"
+          min="1"
+          max="30"
+          required
+          value="0"
+        />
+        <br /><br />
+        <label for="day_overall">Precio aproximado por día: </label>
+        <input
+          id="day_overall"
+          type="number"
+          min="100000"
+          max="1000000"
+          required
+          value="0"
+        />
+        <br /><br />
+        <button id="submit_days_btn" type="button">Definir</button>
+      </form>
+    </section>
+
+    <section class="travel_account">
+      <h2 id="h2_calculated_budget">Para este viaje necesitas:</h2>
+      <h3 id="message"></h3>
+    </section>
+
+    <section class="souvenirs">
+      <h2>Souvenirs:</h2>
+      <h3 id="total_souvenirs"></h3>
+      <form>
+        <h4>Primer souvenir</h4>
+        <label for="souvenir1_name">Nombre del primer souvenir</label>
+        <input id="souvenir1_name" type="text" required maxlength="50" />
+        <br /><br />
+        <label for="souvenir1_price">Precio del primer souvenir</label>
+        <input
+          id="souvenir1_price"
+          type="number"
+          required
+          min="1000"
+          max="1000000"
+          value="0"
+        />
+        <br /><br />
+        <label for="souvenir1_availability"
+          >¿Está disponible el primer souvenir?</label
+        >
+        <input id="souvenir1_availability" type="checkbox" />
+        <br /><br />
+        <h4>Segundo souvenir</h4>
+        <label for="souvenir2_name">Nombre del segundo souvenir</label>
+        <input id="souvenir2_name" type="text" required maxlength="50" />
+        <br /><br />
+        <label for="souvenir2_price">Precio del segundo souvenir</label>
+        <input
+          id="souvenir2_price"
+          type="number"
+          required
+          min="1000"
+          max="1000000"
+          value="0"
+        />
+        <br /><br />
+        <label for="souvenir2_availability"
+          >¿Está disponible el segundo souvenir?</label
+        >
+        <input id="souvenir2_availability" type="checkbox" />
+        <br /><br />
+        <h4>Tercer souvenir</h4>
+        <label for="souvenir3_name">Nombre del tercer souvenir</label>
+        <input id="souvenir3_name" type="text" required maxlength="50" />
+        <br /><br />
+        <label for="souvenir3_price">Precio del tercer souvenir</label>
+        <input
+          id="souvenir3_price"
+          type="number"
+          required
+          min="1000"
+          max="1000000"
+          value="0"
+        />
+        <br /><br />
+        <label for="souvenir3_availability"
+          >¿Está disponible el tercer souvenir?</label
+        >
+        <input id="souvenir3_availability" type="checkbox" />
+        <br><br>
+        <button id="souvenirs_btn" type="button">Definir</button>
+      </form>
+    </section>
+
+    <script src="/seccion1/script.js"></script>
+  </body>
+</html>
