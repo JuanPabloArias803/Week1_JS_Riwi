@@ -5,10 +5,19 @@ let average=0;
 let filteredArray=[];
 
 for (let i = 0; i < gradesArray.length; i++) {
+    if(isNan(gradesArray[i])){
+        alert(gradesArray[i]+" no es una nota válida")
+    }
     gradesArray[i]=Number(gradesArray[i]);
 }
 
+
 filteredArray=gradesArray.filter(num => !isNaN(num));
+
+filteredArray.forEach(element => {
+    let message="Las notas válidas son:\n";
+    message+=element
+});
 
 total=filteredArray.reduce((total, element) => {
     return total + element;
